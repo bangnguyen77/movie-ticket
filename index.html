@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Ticket</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Portland Movie Theatre</h1>
+      <form class="form-group" id="movie-tickets">
+        <label>Select your movie</label>
+        <select class="form-control" id="movieTitle">
+          <option></option>
+          <option value="training-day">Training Day</option>
+          <option value="home-alone-4.5">Home Alone 4.5</option>
+          <option value="toy-story-6">Toy Story 6</option>
+          <option value="finding-dory">Finding Dory</option>
+        </select>
+
+        <label>How old are you?</label>
+        <select class="form-control" id="age">
+          <option></option>
+          <option value="general">general admission: 18-65</option>
+          <option value="seniors">Seniors: 65+</option>
+          <option value="students">Less than 18</option>
+        </select>
+
+        <label>Select the session</label>
+        <select class="form-control" id="movieTime">
+          <option></option>
+          <option value="first-time">10:00</option>
+          <option value="second-time">12:00</option>
+          <option value="third-time">14:00</option>
+          <option value="fourth-time">18:00</option>
+        </select>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+
+      <div id="cost">
+        <p>Your movie will cost $<span id="final-cost">.</span></p>
+      </div>
+
+    </div>
+
+  </body>
+</html>
