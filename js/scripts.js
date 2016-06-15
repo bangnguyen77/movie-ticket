@@ -1,6 +1,6 @@
 // Constructor
-function Ticket (name, age, time) {
-this.movieTitle = name;
+function Ticket (movieName, age, time) {
+this.movieTitle = movieName;
 this.age = age;
 this.movieTime = time;
 }
@@ -32,9 +32,10 @@ $(document).ready(function() {
     var time = $("select#movieTime").val();
 
     var newTicket = new Ticket(movieName,age,time); //Call the constructor
-    var ticketPrice = newTicket.getCost()
-    $("#final-cost").text(ticketPrice);
+    var ticketPrice = newTicket.getCost();
+
     $("#cost").show();
+    $("#final-cost").text(ticketPrice);
 
 
   });
